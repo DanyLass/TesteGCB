@@ -6,11 +6,12 @@ interface ContainerProps {
 
 export const Container = styled.button<ContainerProps>`
   width: 100px;
-  font-size: 14px;
-  color: #a7df63;
+  font-size: 12px;
+  color: #fff;
+
   text-transform: uppercase;
   border: 0px;
   background-color: ${(props) => props.buttonBackground};
-  padding: 8px;
+  padding: 13px;
   border-radius: 5px;
 `;

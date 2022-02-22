@@ -1,38 +1,34 @@
 import React from "react";
 import { Button } from "../../Button";
-import { SearchInput } from "../../SearchInput";
 
 import {
   Container,
-  Title,
-  Subtitle,
-  SubtitleWrapper,
-  LeftHeader,
-  RightHeader,
+  Content,
   RightHeaderImage,
+  Subtitle,
   ButtonWrapper,
 } from "./styles";
 
 export function Header() {
   return (
     <Container>
-      <Title>Healthy Food</Title>
-      <LeftHeader>
-        <SubtitleWrapper>
+      <h2>Healthy Food</h2>
+      <Content>
+        <form>
           <Subtitle>Ready for trying a new recipe?</Subtitle>
-        </SubtitleWrapper>
-        <SearchInput />
-      </LeftHeader>
-      <RightHeader>
-        <ButtonWrapper>
-          <Button title="Healthy" buttonBackground="white" />
-          {/* <Button title="Blog" />
+        </form>
+        <input type="texto" placeholder="Search healthy recipes" />
+        <button type="submit">OK</button>
+      </Content>
+
+      <ButtonWrapper>
+        {/* <Button title="Healthy" buttonBackground="white" /> */}
+        {/* <Button title="Blog" />
           <Button title="Join" />
           <Button title="Register" /> */}
-        </ButtonWrapper>
+      </ButtonWrapper>
 
-        <RightHeaderImage />
-      </RightHeader>
+      <RightHeaderImage />
     </Container>
   );
 }

@@ -2,53 +2,52 @@ import styled from "styled-components";
 import imageHeader from "../../../images/Illustration.svg";
 
 export const Container = styled.div`
+  height: 100vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: stretch;
+
+  h2 {
+    color: #a7df63;
+  }
 `;
 
-export const LeftHeader = styled.div`
-  max-width: 50%;
-  display: flex;
-  padding: 20px 50px;
-  flex-direction: column;
-  justify-content: center;
+export const Content = styled.div`
+  input {
+    background: #ffff;
+    border-radius: 5px;
+    border: 1px solid #1d164d;
+    padding: 20px;
+    width: 70%;
+    height: 10%;
+  }
+
+  button {
+    background-color: #a7df63;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+
+    color: #ffffff;
+    width: 10%;
+
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+
+  form {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1d164d;
+    margin-top: 200px;
+  }
 `;
 
-export const RightHeader = styled.div`
-  max-width: 50%;
-  display: flex;
-  flex-direction: column;
-`;
+export const Subtitle = styled.text``;
 
-export const Title = styled.text`
-  color: #a7df63;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 20px 50px;
-`;
+export const ButtonWrapper = styled.div``;
 
-export const Subtitle = styled.text`
-  font-size: 38px;
-  font-weight: bold;
-  color: #1d164d;
-`;
-
-export const SubtitleWrapper = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-export const ButtonWrapper = styled.div`
-  margin: 0 200px;
-
-  display: flex;
-  align-items: flex-end;
-  position: absolute;
-`;
-
-export const RightHeaderImage = styled.img.attrs({
-  src: `${imageHeader}`,
-})`
-  width: 600px;
+export const RightHeaderImage = styled.div`
+  flex: 1;
+  background: url(${imageHeader}) no-repeat center;
+  background-size: cover;
 `;
