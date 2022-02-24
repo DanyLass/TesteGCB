@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "../../Button";
 
 import {
   Container,
@@ -17,7 +16,8 @@ export function Membership() {
       <Title>Join our membership to get special offer</Title>
       <ButtonWrapper>
         <input type="text" placeholder=" Enter your email address" />
-        <Button title=" join" buttonBackground="#a7df63" />
+
+        <button type="submit">Join</button>
       </ButtonWrapper>
       <ImageMembership />
       <TitleView>© Copyrights 2019 Stack. All Rights Reserved.</TitleView>

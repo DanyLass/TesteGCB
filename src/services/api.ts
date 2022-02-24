@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "https://viacep.com.br/ws/",
+  baseURL: "https://viacep.com.br/ws",
 });

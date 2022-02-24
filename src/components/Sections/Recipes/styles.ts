@@ -10,7 +10,8 @@ export const LeftHeader = styled.div`
   color: #1d164d;
   margin-left: 10px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
+  margin-top: 30px;
 `;
 
 export const Text = styled.text`

@@ -2,13 +2,10 @@ import styled from "styled-components";
 import imageHeader from "../../../images/Illustration.svg";
 
 export const Container = styled.div`
-  height: 100vh;
+  width: 100%;
   display: flex;
   align-items: stretch;
-
-  h2 {
-    color: #a7df63;
-  }
+  margin-left: 20%;
 `;
 
 export const Content = styled.div`
@@ -19,8 +16,13 @@ export const Content = styled.div`
     padding: 20px;
     width: 70%;
     height: 10%;
+    margin-left: 10%;
   }
-
+  h2 {
+    color: #a7df63;
+    margin-left: 20%;
+    margin-top: 10%;
+  }
   button {
     background-color: #a7df63;
     height: 40px;
@@ -46,8 +48,8 @@ export const Subtitle = styled.text``;
 
 export const ButtonWrapper = styled.div``;
 
-export const RightHeaderImage = styled.div`
-  flex: 1;
-  background: url(${imageHeader}) no-repeat center;
-  background-size: cover;
+export const RightHeaderImage = styled.img.attrs({
+  src: `${imageHeader}`,
+})`
+  width: 600px;
 `;

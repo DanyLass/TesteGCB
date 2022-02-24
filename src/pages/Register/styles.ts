@@ -2,7 +2,6 @@ import styled from "styled-components";
 import illustrationImg from "../../images/Illustration.svg";
 
 export const Container = styled.div`
-  height: 100vh;
   display: flex;
   align-items: stretch;
 `;
@@ -14,13 +13,6 @@ export const Content = styled.div`
   place-content: center;
   width: 100%;
   max-width: 700px;
-
-  form {
-    margin: 60px 0;
-    width: 500px;
-    text-align: center;
-    line-height: 10px;
-  }
 
   h1 {
     margin-bottom: 20px;
@@ -51,11 +43,17 @@ export const Content = styled.div`
     color: #ffffff;
     width: 40%;
     font-weight: 500;
-
+    margin-top: 10px;
     margin-left: 8px;
   }
 `;
 
+export const Form = styled.div`
+  margin: 60px 0;
+  width: 500px;
+  text-align: center;
+  line-height: 10px;
+`;
 export const ButtonWrapper = styled.div``;
 
 export const RegisterImage = styled.div`

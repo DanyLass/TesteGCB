@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../../Button";
+import { useNavigate } from "react-router-dom";
 
 import {
   Container,
@@ -10,10 +11,12 @@ import {
 } from "./styles";
 
 export function Header() {
+  const navigate = useNavigate();
+
   return (
     <Container>
-      <h2>Healthy Food</h2>
       <Content>
+        <h2>Healthy Food</h2>
         <form>
           <Subtitle>Ready for trying a new recipe?</Subtitle>
         </form>
@@ -22,10 +25,9 @@ export function Header() {
       </Content>
 
       <ButtonWrapper>
-        {/* <Button title="Healthy" buttonBackground="white" /> */}
-        {/* <Button title="Blog" />
-          <Button title="Join" />
-          <Button title="Register" /> */}
+        <button type="submit" onClick={() => navigate("register")}>
+          REGISTER
+        </button>
       </ButtonWrapper>
 
       <RightHeaderImage />
