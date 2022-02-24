@@ -116,7 +116,7 @@ export function Register() {
           />
 
           <Input
-            type="date"
+            type="text"
             name="birthDate"
             placeholder="Data de nascimento"
             onChange={(e) => setBirthDate(e.target.value)}
@@ -124,7 +124,7 @@ export function Register() {
           />
 
           <Input
-            type="number"
+            type="text"
             name="cpf"
             placeholder="CPF"
             onChange={(e) => setCpf(e.target.value)}
@@ -132,7 +132,7 @@ export function Register() {
           />
 
           <Input
-            type="number"
+            type="text"
             name="cep"
             placeholder="CEP "
             onChange={(e) => setCep(e.target.value)}
@@ -156,7 +156,7 @@ export function Register() {
           />
 
           <Input
-            type="number"
+            type="text"
             name="number"
             placeholder="Número"
             onChange={(e) => setNumber(e.target.value)}
@@ -190,6 +190,7 @@ export function Register() {
           </button>
         </Form>
       </Content>
+
       <RegisterImage />
     </Container>
   );

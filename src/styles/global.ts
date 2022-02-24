@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle` 
 
 
 * {
@@ -11,31 +11,24 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 
-html { 
-  @media (max-width: 900px) {
- 
+  body {
+    background: #ffff;
+    color:#1d164d;
   }
 
- 
+  body, input, button,title {
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    
+  }
 
+  h1,h2,h3,h4,h5,h6, strong {
+    font-weight:800;
+  }
 
-body {
-  background: #ffff;
-  color:#1d164d;
-}
+  button { 
+    cursor: pointer;
+  }
 
-body, input, button,title {
-  font-family: "Red Hat Display";
-  font-size: 16px;
-  
-}
-
-h1,h2,h3,h4,h5,h6, strong {
-  font-weight:800;
-}
-
-button { 
-  cursor: pointer;
-}
 
 `;

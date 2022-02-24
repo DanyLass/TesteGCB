@@ -54,7 +54,6 @@ export const Form = styled.div`
   text-align: center;
   line-height: 10px;
 `;
-export const ButtonWrapper = styled.div``;
 
 export const RegisterImage = styled.img.attrs({
   src: `${illustrationImg}`,

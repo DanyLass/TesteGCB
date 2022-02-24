@@ -15,7 +15,7 @@ export const Content = styled.div`
     border: 1px solid #1d164d;
     padding: 20px;
     width: 70%;
-    height: 10%;
+    height: 5%;
     margin-left: 10%;
   }
   h1 {
