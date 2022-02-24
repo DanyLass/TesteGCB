@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 300px;
-  height: 100px;
+  align-items: stretch;
   flex-direction: column;
   display: flex;
   align-items: center;
   text-align: center;
+  width: 100%;
 `;
 
 export const ImageView = styled.div`
   margin-bottom: 5px;
   padding: 50px;
   text-align: center;
+  flex: 1;
 `;
 
 export const TitleView = styled.div`
@@ -25,6 +26,9 @@ export const TitleView = styled.div`
 
 export const Title = styled.text`
   color: #1d164d;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: left;
+  margin-top: -60px;
+  font-weight: bold;
 `;

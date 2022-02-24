@@ -4,6 +4,8 @@ import illustrationImg from "../../images/Illustration.svg";
 export const Container = styled.div`
   display: flex;
   align-items: stretch;
+  width: 100%;
+  margin-left: 10px;
 `;
 
 export const Content = styled.div`
@@ -11,11 +13,9 @@ export const Content = styled.div`
   flex-direction: column;
 
   place-content: center;
-  width: 100%;
-  max-width: 700px;
 
   h1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #1d164d;
     font-size: 23px;
   }
@@ -25,8 +25,8 @@ export const Content = styled.div`
     border-radius: 10px;
     border: 1px solid #232129;
     padding: 10px;
-    width: 40%;
-    height: 15%;
+    width: 200px;
+    height: 30px;
 
     & + input {
       margin-top: 8px;
@@ -41,7 +41,7 @@ export const Content = styled.div`
     border: 0;
     padding: 0 16px;
     color: #ffffff;
-    width: 40%;
+    width: 80%;
     font-weight: 500;
     margin-top: 10px;
     margin-left: 8px;
@@ -50,14 +50,16 @@ export const Content = styled.div`
 
 export const Form = styled.div`
   margin: 60px 0;
-  width: 500px;
+  width: 400px;
   text-align: center;
   line-height: 10px;
 `;
 export const ButtonWrapper = styled.div``;
 
-export const RegisterImage = styled.div`
-  flex: 1;
-  background: url(${illustrationImg}) no-repeat center;
+export const RegisterImage = styled.img.attrs({
+  src: `${illustrationImg}`,
+})`
   background-size: cover;
+  flex: 1;
+  width: 10px;
 `;

@@ -6,30 +6,28 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   margin-right: 80px;
-  height: 100vh;
+  width: 100%;
   align-items: stretch;
 `;
 
-export const Title = styled.text`
-  margin-left: 50px;
-
-  font-weight: bold;
-  font-size: 20px;
-  color: #1d164d;
-`;
-
-export const Text = styled.text`
-  color: #cdc5bf;
-  font-size: 12px;
-  text-align: right;
-  display: inline;
-  margin-right: 400px;
-  margin-top: 100px;
-`;
-
 export const Content = styled.div`
-  display: flex;
+  margin-left: -70px;
+
+  h2 {
+    color: #1d164d;
+    margin-top: 90px;
+    font-size: 30px;
+  }
+
+  form {
+    display: block;
+    color: #cfcfcf;
+    margin-top: 30px;
+    margin-left: -90px;
+    padding: 10px 100px;
+  }
 `;
+
 export const ButtonMore = styled.div`
   font-weight: bold;
   font-size: 20px;
@@ -39,5 +37,5 @@ export const ButtonMore = styled.div`
 export const ImageService = styled.img.attrs({
   src: `${imageService}`,
 })`
-  width: 500px;
+  flex: 1;
 `;

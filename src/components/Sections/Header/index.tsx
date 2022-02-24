@@ -1,14 +1,8 @@
 import React from "react";
-import { Button } from "../../Button";
+
 import { useNavigate } from "react-router-dom";
 
-import {
-  Container,
-  Content,
-  RightHeaderImage,
-  Subtitle,
-  ButtonWrapper,
-} from "./styles";
+import { Container, Content, ButtonWrapper, RightHeaderImage } from "./styles";
 
 export function Header() {
   const navigate = useNavigate();
@@ -16,21 +10,20 @@ export function Header() {
   return (
     <Container>
       <Content>
-        <h2>Healthy Food</h2>
+        <h1>Healthy Food</h1>
         <form>
-          <Subtitle>Ready for trying a new recipe?</Subtitle>
+          <h3>Ready for trying a new recipe?</h3>
         </form>
         <input type="texto" placeholder="Search healthy recipes" />
         <button type="submit">OK</button>
       </Content>
 
+      <RightHeaderImage />
       <ButtonWrapper>
         <button type="submit" onClick={() => navigate("register")}>
           REGISTER
         </button>
       </ButtonWrapper>
-
-      <RightHeaderImage />
     </Container>
   );
 }

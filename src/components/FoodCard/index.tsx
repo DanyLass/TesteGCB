@@ -14,7 +14,7 @@ export function FoodCard({ title, src, buttonTitle, buttonColor }: Props) {
   return (
     <Container>
       <ImageView>
-        <img src={src} alt="" width={150} height={150} />
+        <img src={src} alt="" width={230} height={230} />
       </ImageView>
       <TitleView>
         <Title>{title}</Title>

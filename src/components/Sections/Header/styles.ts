@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import imageHeader from "../../../images/Illustration.svg";
 
@@ -5,7 +6,6 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   align-items: stretch;
-  margin-left: 20%;
 `;
 
 export const Content = styled.div`
@@ -18,7 +18,7 @@ export const Content = styled.div`
     height: 10%;
     margin-left: 10%;
   }
-  h2 {
+  h1 {
     color: #a7df63;
     margin-left: 20%;
     margin-top: 10%;
@@ -36,20 +36,31 @@ export const Content = styled.div`
     margin-top: 50px;
   }
 
-  form {
+  h3 {
     font-size: 30px;
     font-weight: bold;
     color: #1d164d;
     margin-top: 200px;
+    margin-left: 10px;
   }
 `;
 
-export const Subtitle = styled.text``;
+export const ButtonWrapper = styled.div`
+  button {
+    background: #ffff;
 
-export const ButtonWrapper = styled.div``;
+    color: #a7df63;
+
+    border: 1px solid #a7df63;
+    margin-left: -300px;
+    padding: 20px 30px;
+    border-radius: 5px;
+  }
+`;
 
 export const RightHeaderImage = styled.img.attrs({
   src: `${imageHeader}`,
 })`
-  width: 600px;
+  background-size: cover;
+  flex: 1;
 `;

@@ -1,6 +1,6 @@
 import React from "react";
 import { BlogCard } from "../../BlogCard";
-import { Container, Title, Text, FoodView, Top } from "./styles";
+import { Container, FoodView, Content } from "./styles";
 import nutsiImage from "../../../images/blog_image_1.svg";
 import healthImage from "../../../images/bloco_image_2.svg";
 import eatingImage from "../../../images/bloco_image_3.svg";
@@ -8,14 +8,14 @@ import eatingImage from "../../../images/bloco_image_3.svg";
 export function ReadBlog() {
   return (
     <Container>
-      <Title>Red Our Blog</Title>
-      <Text>
+      <h2>Red Our Blog</h2>
+      <form>
         Far far away, behind the word mountains, far from the countries Vokalia
         and Consonantia, there live the blind texts.
-      </Text>
+      </form>
 
       <FoodView>
-        <Top>
+        <Content>
           <BlogCard
             src={nutsiImage}
             title="Quick-start guide
@@ -31,7 +31,7 @@ export function ReadBlog() {
             title="The top 10 benefits
             of eating healthy"
           />
-        </Top>
+        </Content>
       </FoodView>
     </Container>
   );
